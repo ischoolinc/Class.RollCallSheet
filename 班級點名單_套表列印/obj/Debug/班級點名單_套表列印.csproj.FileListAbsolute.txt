@@ -1,0 +1,7 @@
+C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\bin\Debug\K12.Class.RollCallSheet.dll
+C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\bin\Debug\K12.Class.RollCallSheet.pdb
+C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\班級點名單_套表列印.Form1.resources
+C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\班級點名單_套表列印.Properties.Resources.resources
+C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\班級點名單_套表列印.csproj.GenerateResource.Cache
+C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\K12.Class.RollCallSheet.dll
+C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\K12.Class.RollCallSheet.pdb
