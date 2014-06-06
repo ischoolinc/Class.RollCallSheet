@@ -53,6 +53,8 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.cbDay6 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.cbDay7 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput2)).BeginInit();
@@ -128,6 +130,8 @@
             this.groupPanel1.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.cbDay7);
+            this.groupPanel1.Controls.Add(this.cbDay6);
             this.groupPanel1.Controls.Add(this.cbDay3);
             this.groupPanel1.Controls.Add(this.cbDay5);
             this.groupPanel1.Controls.Add(this.cbDay4);
@@ -187,7 +191,7 @@
             this.cbDay3.Checked = true;
             this.cbDay3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbDay3.CheckValue = "Y";
-            this.cbDay3.Location = new System.Drawing.Point(194, 13);
+            this.cbDay3.Location = new System.Drawing.Point(106, 22);
             this.cbDay3.Name = "cbDay3";
             this.cbDay3.Size = new System.Drawing.Size(40, 21);
             this.cbDay3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -205,7 +209,7 @@
             this.cbDay5.Checked = true;
             this.cbDay5.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbDay5.CheckValue = "Y";
-            this.cbDay5.Location = new System.Drawing.Point(298, 13);
+            this.cbDay5.Location = new System.Drawing.Point(198, 22);
             this.cbDay5.Name = "cbDay5";
             this.cbDay5.Size = new System.Drawing.Size(40, 21);
             this.cbDay5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -223,7 +227,7 @@
             this.cbDay4.Checked = true;
             this.cbDay4.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbDay4.CheckValue = "Y";
-            this.cbDay4.Location = new System.Drawing.Point(246, 13);
+            this.cbDay4.Location = new System.Drawing.Point(152, 22);
             this.cbDay4.Name = "cbDay4";
             this.cbDay4.Size = new System.Drawing.Size(40, 21);
             this.cbDay4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -241,7 +245,7 @@
             this.cbDay2.Checked = true;
             this.cbDay2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbDay2.CheckValue = "Y";
-            this.cbDay2.Location = new System.Drawing.Point(142, 13);
+            this.cbDay2.Location = new System.Drawing.Point(60, 22);
             this.cbDay2.Name = "cbDay2";
             this.cbDay2.Size = new System.Drawing.Size(40, 21);
             this.cbDay2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -256,7 +260,7 @@
             // 
             this.labelX5.BackgroundStyle.Class = "";
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX5.Location = new System.Drawing.Point(4, 13);
+            this.labelX5.Location = new System.Drawing.Point(4, 3);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(74, 21);
             this.labelX5.TabIndex = 8;
@@ -273,7 +277,7 @@
             this.cbDay1.Checked = true;
             this.cbDay1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbDay1.CheckValue = "Y";
-            this.cbDay1.Location = new System.Drawing.Point(90, 13);
+            this.cbDay1.Location = new System.Drawing.Point(14, 22);
             this.cbDay1.Name = "cbDay1";
             this.cbDay1.Size = new System.Drawing.Size(40, 21);
             this.cbDay1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -513,6 +517,42 @@
             this.labelX3.TabIndex = 8;
             this.labelX3.Text = "日期清單：";
             // 
+            // cbDay6
+            // 
+            this.cbDay6.AutoSize = true;
+            // 
+            // 
+            // 
+            this.cbDay6.BackgroundStyle.Class = "";
+            this.cbDay6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.cbDay6.Checked = true;
+            this.cbDay6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbDay6.CheckValue = "Y";
+            this.cbDay6.Location = new System.Drawing.Point(244, 22);
+            this.cbDay6.Name = "cbDay6";
+            this.cbDay6.Size = new System.Drawing.Size(40, 21);
+            this.cbDay6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbDay6.TabIndex = 13;
+            this.cbDay6.Text = "六";
+            // 
+            // cbDay7
+            // 
+            this.cbDay7.AutoSize = true;
+            // 
+            // 
+            // 
+            this.cbDay7.BackgroundStyle.Class = "";
+            this.cbDay7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.cbDay7.Checked = true;
+            this.cbDay7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbDay7.CheckValue = "Y";
+            this.cbDay7.Location = new System.Drawing.Point(290, 22);
+            this.cbDay7.Name = "cbDay7";
+            this.cbDay7.Size = new System.Drawing.Size(40, 21);
+            this.cbDay7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbDay7.TabIndex = 14;
+            this.cbDay7.Text = "日";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -563,5 +603,7 @@
         private DevComponents.DotNetBar.Controls.CheckBoxX cbDay2;
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.Controls.CheckBoxX cbDay1;
+        private DevComponents.DotNetBar.Controls.CheckBoxX cbDay7;
+        private DevComponents.DotNetBar.Controls.CheckBoxX cbDay6;
     }
 }

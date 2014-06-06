@@ -5,3 +5,11 @@ C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\班級�
 C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\班級點名單_套表列印.csproj.GenerateResource.Cache
 C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\K12.Class.RollCallSheet.dll
 C:\Users\huangwc\Desktop\dev.sh_d\班級點名單_套表列印\obj\Debug\K12.Class.RollCallSheet.pdb
+C:\Users\ChiaHu\Desktop\huangwc_desktop\github\Class.RollCallSheet\班級點名單_套表列印\bin\Debug\K12.Class.RollCallSheet.dll
+C:\Users\ChiaHu\Desktop\huangwc_desktop\github\Class.RollCallSheet\班級點名單_套表列印\bin\Debug\K12.Class.RollCallSheet.pdb
+C:\Users\ChiaHu\Desktop\huangwc_desktop\github\Class.RollCallSheet\班級點名單_套表列印\obj\Debug\班級點名單_套表列印.csprojResolveAssemblyReference.cache
+C:\Users\ChiaHu\Desktop\huangwc_desktop\github\Class.RollCallSheet\班級點名單_套表列印\obj\Debug\班級點名單_套表列印.Form1.resources
+C:\Users\ChiaHu\Desktop\huangwc_desktop\github\Class.RollCallSheet\班級點名單_套表列印\obj\Debug\班級點名單_套表列印.Properties.Resources.resources
+C:\Users\ChiaHu\Desktop\huangwc_desktop\github\Class.RollCallSheet\班級點名單_套表列印\obj\Debug\班級點名單_套表列印.csproj.GenerateResource.Cache
+C:\Users\ChiaHu\Desktop\huangwc_desktop\github\Class.RollCallSheet\班級點名單_套表列印\obj\Debug\K12.Class.RollCallSheet.dll
+C:\Users\ChiaHu\Desktop\huangwc_desktop\github\Class.RollCallSheet\班級點名單_套表列印\obj\Debug\K12.Class.RollCallSheet.pdb

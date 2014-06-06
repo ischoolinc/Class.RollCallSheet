@@ -267,7 +267,10 @@ namespace 班級點名單_套表列印
                 WeekList.Add(DayOfWeek.Thursday);
             if (cbDay5.Checked)
                 WeekList.Add(DayOfWeek.Friday);
-
+            if (cbDay6.Checked)
+                WeekList.Add(DayOfWeek.Saturday);
+            if (cbDay7.Checked)
+                WeekList.Add(DayOfWeek.Sunday);
             for (int x = 0; x <= ts.Days; x++)
             {
                 DateTime dt = dateTimeInput1.Value.AddDays(x);
