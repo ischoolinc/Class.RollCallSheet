@@ -37,6 +37,8 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.cbDay7 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.cbDay6 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.cbDay3 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.cbDay5 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.cbDay4 = new DevComponents.DotNetBar.Controls.CheckBoxX();
@@ -53,8 +55,6 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.cbDay6 = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.cbDay7 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput2)).BeginInit();
@@ -179,6 +179,42 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 11;
             this.groupPanel1.Text = "設定";
+            // 
+            // cbDay7
+            // 
+            this.cbDay7.AutoSize = true;
+            // 
+            // 
+            // 
+            this.cbDay7.BackgroundStyle.Class = "";
+            this.cbDay7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.cbDay7.Checked = true;
+            this.cbDay7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbDay7.CheckValue = "Y";
+            this.cbDay7.Location = new System.Drawing.Point(290, 22);
+            this.cbDay7.Name = "cbDay7";
+            this.cbDay7.Size = new System.Drawing.Size(40, 21);
+            this.cbDay7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbDay7.TabIndex = 14;
+            this.cbDay7.Text = "日";
+            // 
+            // cbDay6
+            // 
+            this.cbDay6.AutoSize = true;
+            // 
+            // 
+            // 
+            this.cbDay6.BackgroundStyle.Class = "";
+            this.cbDay6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.cbDay6.Checked = true;
+            this.cbDay6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbDay6.CheckValue = "Y";
+            this.cbDay6.Location = new System.Drawing.Point(244, 22);
+            this.cbDay6.Name = "cbDay6";
+            this.cbDay6.Size = new System.Drawing.Size(40, 21);
+            this.cbDay6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbDay6.TabIndex = 13;
+            this.cbDay6.Text = "六";
             // 
             // cbDay3
             // 
@@ -517,42 +553,6 @@
             this.labelX3.TabIndex = 8;
             this.labelX3.Text = "日期清單：";
             // 
-            // cbDay6
-            // 
-            this.cbDay6.AutoSize = true;
-            // 
-            // 
-            // 
-            this.cbDay6.BackgroundStyle.Class = "";
-            this.cbDay6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.cbDay6.Checked = true;
-            this.cbDay6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbDay6.CheckValue = "Y";
-            this.cbDay6.Location = new System.Drawing.Point(244, 22);
-            this.cbDay6.Name = "cbDay6";
-            this.cbDay6.Size = new System.Drawing.Size(40, 21);
-            this.cbDay6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cbDay6.TabIndex = 13;
-            this.cbDay6.Text = "六";
-            // 
-            // cbDay7
-            // 
-            this.cbDay7.AutoSize = true;
-            // 
-            // 
-            // 
-            this.cbDay7.BackgroundStyle.Class = "";
-            this.cbDay7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.cbDay7.Checked = true;
-            this.cbDay7.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbDay7.CheckValue = "Y";
-            this.cbDay7.Location = new System.Drawing.Point(290, 22);
-            this.cbDay7.Name = "cbDay7";
-            this.cbDay7.Size = new System.Drawing.Size(40, 21);
-            this.cbDay7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cbDay7.TabIndex = 14;
-            this.cbDay7.Text = "日";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -568,7 +568,7 @@
             this.Controls.Add(this.btnSave);
             this.DoubleBuffered = true;
             this.Name = "Form1";
-            this.Text = "班級點名單(套表列印)";
+            this.Text = "班級點名單(週報表樣式)";
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput1)).EndInit();

@@ -182,7 +182,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\班級點名單%28套表列印範本%29.doc" />
+    <None Include="Resources\班級點名單%28週報表樣式範本%29.doc" />
     <None Include="Resources\班級點名表_合併欄位總表.doc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

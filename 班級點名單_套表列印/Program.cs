@@ -20,13 +20,13 @@ namespace 班級點名單_套表列印
         public static void Main()
         {
             FISCA.Presentation.MenuButton btn = FISCA.Presentation.MotherForm.RibbonBarItems["班級", "資料統計"]["報表"]["學籍相關報表"];
-            btn["班級點名單(套表列印)"].Enable = Permissions.班級點名單_套表列印權限;
-            btn["班級點名單(套表列印)"].Click += delegate
+            btn["班級點名單(週報表樣式)"].Enable = Permissions.班級點名單_週報表樣式權限;
+            btn["班級點名單(週報表樣式)"].Click += delegate
             {
                 new Form1().ShowDialog();
             };
             FISCA.Permission.Catalog TestCatalog = FISCA.Permission.RoleAclSource.Instance["班級"]["報表"];
-            TestCatalog.Add(new FISCA.Permission.RibbonFeature(Permissions.班級點名單_套表列印, "班級點名單(套表列印)"));
+            TestCatalog.Add(new FISCA.Permission.RibbonFeature(Permissions.班級點名單_週報表樣式, "班級點名單(週報表樣式)"));
         }
     }
 }

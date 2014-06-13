@@ -79,7 +79,7 @@ namespace 班級點名單_套表列印
             {
                 //如果範本為空,則建立一個預設範本
                 Campus.Report.ReportConfiguration ConfigurationInCadre_1 = new Campus.Report.ReportConfiguration(ClassPrint_Config_1);
-                ConfigurationInCadre_1.Template = new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_套表列印範本_, Campus.Report.TemplateType.Word);
+                ConfigurationInCadre_1.Template = new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, Campus.Report.TemplateType.Word);
                 Template = ConfigurationInCadre_1.Template.ToDocument();
             }
             else
@@ -214,7 +214,7 @@ namespace 班級點名單_套表列印
                         SaveFileDialog SaveFileDialog1 = new SaveFileDialog();
 
                         SaveFileDialog1.Filter = "Word (*.doc)|*.doc|所有檔案 (*.*)|*.*";
-                        SaveFileDialog1.FileName = "班級點名單(套表列印)";
+                        SaveFileDialog1.FileName = "班級點名單(週報表樣式)";
 
                         if (SaveFileDialog1.ShowDialog() == DialogResult.OK)
                         {
@@ -305,16 +305,16 @@ namespace 班級點名單_套表列印
             //畫面內容(範本內容,預設樣式
             if (ConfigurationInCadre.Template != null)
             {
-                TemplateForm = new Campus.Report.TemplateSettingForm(ConfigurationInCadre.Template, new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_套表列印範本_, Campus.Report.TemplateType.Word));
+                TemplateForm = new Campus.Report.TemplateSettingForm(ConfigurationInCadre.Template, new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, Campus.Report.TemplateType.Word));
             }
             else
             {
-                ConfigurationInCadre.Template = new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_套表列印範本_, Campus.Report.TemplateType.Word);
-                TemplateForm = new Campus.Report.TemplateSettingForm(ConfigurationInCadre.Template, new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_套表列印範本_, Campus.Report.TemplateType.Word));
+                ConfigurationInCadre.Template = new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, Campus.Report.TemplateType.Word);
+                TemplateForm = new Campus.Report.TemplateSettingForm(ConfigurationInCadre.Template, new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, Campus.Report.TemplateType.Word));
             }
 
             //預設名稱
-            TemplateForm.DefaultFileName = "班級點名單(套表列印範本)";
+            TemplateForm.DefaultFileName = "班級點名單(週報表樣式範本)";
 
             //如果回傳為OK
             if (TemplateForm.ShowDialog() == DialogResult.OK)
