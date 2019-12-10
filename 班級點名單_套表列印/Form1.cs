@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using FISCA.Presentation.Controls;
-using Aspose.Words;
 using System.IO;
 using FISCA.DSAUtil;
 using FISCA.UDT;
 using K12.Data;
 using System.Xml;
 using System.Diagnostics;
+using Aspose.Words;
+using Campus.Report2014;
 
 namespace 班級點名單_套表列印
 {
@@ -72,14 +73,14 @@ namespace 班級點名單_套表列印
 
         void BGW_DoWork(object sender, DoWorkEventArgs e)
         {
-            Campus.Report.ReportConfiguration ConfigurationInCadre = new Campus.Report.ReportConfiguration(ClassPrint_Config_1);
+            ReportConfiguration ConfigurationInCadre = new ReportConfiguration(ClassPrint_Config_1);
             Aspose.Words.Document Template;
 
             if (ConfigurationInCadre.Template == null)
             {
                 //如果範本為空,則建立一個預設範本
-                Campus.Report.ReportConfiguration ConfigurationInCadre_1 = new Campus.Report.ReportConfiguration(ClassPrint_Config_1);
-                ConfigurationInCadre_1.Template = new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, Campus.Report.TemplateType.Word);
+                ReportConfiguration ConfigurationInCadre_1 = new ReportConfiguration(ClassPrint_Config_1);
+                ConfigurationInCadre_1.Template = new ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, TemplateType.docx);
                 Template = ConfigurationInCadre_1.Template.ToDocument();
             }
             else
@@ -213,12 +214,12 @@ namespace 班級點名單_套表列印
                     {
                         SaveFileDialog SaveFileDialog1 = new SaveFileDialog();
 
-                        SaveFileDialog1.Filter = "Word (*.doc)|*.doc|所有檔案 (*.*)|*.*";
+                        SaveFileDialog1.Filter = "Word (*.docx)|*.docx|所有檔案 (*.*)|*.*";
                         SaveFileDialog1.FileName = "班級點名單(週報表樣式)";
 
                         if (SaveFileDialog1.ShowDialog() == DialogResult.OK)
                         {
-                            inResult.Save(SaveFileDialog1.FileName);
+                            inResult.Save(SaveFileDialog1.FileName, SaveFormat.Docx);
                             Process.Start(SaveFileDialog1.FileName);
                         }
                         else
@@ -300,21 +301,21 @@ namespace 班級點名單_套表列印
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //取得設定檔
-            Campus.Report.ReportConfiguration ConfigurationInCadre = new Campus.Report.ReportConfiguration(ClassPrint_Config_1);
-            Campus.Report.TemplateSettingForm TemplateForm;
+            ReportConfiguration ConfigurationInCadre = new ReportConfiguration(ClassPrint_Config_1);
+            TemplateSettingForm TemplateForm;
             //畫面內容(範本內容,預設樣式
             if (ConfigurationInCadre.Template != null)
             {
-                TemplateForm = new Campus.Report.TemplateSettingForm(ConfigurationInCadre.Template, new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, Campus.Report.TemplateType.Word));
+                TemplateForm = new TemplateSettingForm(ConfigurationInCadre.Template, new ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, TemplateType.docx));
             }
             else
             {
-                ConfigurationInCadre.Template = new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, Campus.Report.TemplateType.Word);
-                TemplateForm = new Campus.Report.TemplateSettingForm(ConfigurationInCadre.Template, new Campus.Report.ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, Campus.Report.TemplateType.Word));
+                ConfigurationInCadre.Template = new ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, TemplateType.docx);
+                TemplateForm = new TemplateSettingForm(ConfigurationInCadre.Template, new ReportTemplate(Properties.Resources.班級點名單_週報表樣式範本_, TemplateType.docx));
             }
 
             //預設名稱
-            TemplateForm.DefaultFileName = "班級點名單(週報表樣式範本)";
+            TemplateForm.DefaultFileName = "班級點名單(週報表樣式範本 For Docx)";
 
             //如果回傳為OK
             if (TemplateForm.ShowDialog() == DialogResult.OK)
@@ -330,8 +331,8 @@ namespace 班級點名單_套表列印
         {
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Title = "另存新檔";
-            sfd.FileName = "班級點名表_合併欄位總表.doc";
-            sfd.Filter = "Word檔案 (*.doc)|*.doc|所有檔案 (*.*)|*.*";
+            sfd.FileName = "班級點名表_合併欄位總表.docx";
+            sfd.Filter = "Word檔案 (*.docx)|*.docx|所有檔案 (*.*)|*.*";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 try

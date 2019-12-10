@@ -119,9 +119,9 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="班級點名單_週報表樣式範本_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\班級點名單(週報表樣式範本).doc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\班級點名單(週報表樣式範本).docx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="班級點名表_合併欄位總表" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\班級點名表_合併欄位總表.doc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\班級點名表_合併欄位總表.docx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\ischool\ischool_DEV\addmodules\班級點名單\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -30,18 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9a40d5a4b59e5256, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Cells_201402, Version=7.7.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\Aspose.Cells.dll</HintPath>
+      <HintPath>Library\Aspose.Cells_201402.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Aspose.Words, Version=4.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Words_201402, Version=14.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\Aspose.Words.dll</HintPath>
+      <HintPath>Library\Aspose.Words_201402.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Campus.Report">
-      <HintPath>Library\Campus.Report.dll</HintPath>
+    <Reference Include="Campus.Report2014, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Campus.Report2014.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
@@ -134,10 +135,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Library\Aspose.Cells.dll" />
-    <Content Include="Library\Aspose.Cells.xml" />
-    <Content Include="Library\Aspose.Words.dll" />
-    <Content Include="Library\Aspose.Words.xml" />
+    <Content Include="Library\Aspose.Cells_201402.dll" />
+    <Content Include="Library\Aspose.Cells_201402.xml" />
+    <Content Include="Library\Aspose.Words_201402.dll" />
+    <Content Include="Library\Aspose.Words_201402.xml" />
+    <Content Include="Library\Campus.Report2014.dll" />
+    <Content Include="Library\Campus.Report2014.pdb" />
     <Content Include="Library\DevComponents.DotNetBar2.dll" />
     <Content Include="Library\DevComponents.DotNetBar2.xml" />
     <Content Include="Library\FISCA.Data.dll" />
@@ -182,8 +185,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\班級點名單%28週報表樣式範本%29.doc" />
-    <None Include="Resources\班級點名表_合併欄位總表.doc" />
+    <None Include="Resources\班級點名單%28週報表樣式範本%29.docx" />
+    <None Include="Resources\班級點名表_合併欄位總表.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
